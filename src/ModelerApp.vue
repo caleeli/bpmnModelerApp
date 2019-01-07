@@ -45,6 +45,7 @@ require("@processmaker/modeler/src/assets/trash-alt-solid.svg");
 require("@processmaker/modeler/src/assets/highlight-shape.svg");
 require("@processmaker/modeler/src/assets/lane-below.svg");
 require("@processmaker/modeler/src/assets/lane-above.svg");
+require("@processmaker/modeler/src/assets/script.svg");
 
 export default {
   name: 'ModelerApp',
