@@ -1,13 +1,21 @@
 {
-  "name": "test",
+  "name": "Modeler",
+  "description": "BPMN Modeler by Processmaker",
+  "author": "Processmaker Inc.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
+    "@processmaker/modeler": "^0.2.6",
+    "@processmaker/processmaker-bpmn-moddle": "^0.1.4",
+    "moment": "^2.23.0",
     "vue": "^2.5.21"
   },
   "devDependencies": {
@@ -15,8 +23,10 @@
     "@vue/cli-plugin-eslint": "^3.2.0",
     "@vue/cli-service": "^3.2.0",
     "babel-eslint": "^10.0.1",
+    "electron": "^3.0.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.10",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -42,5 +52,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "background.js"
 }
