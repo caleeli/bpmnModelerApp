@@ -2,7 +2,7 @@
   "name": "Modeler",
   "description": "BPMN Modeler by Processmaker",
   "author": "Processmaker Inc.",
-  "version": "0.1.0",
+  "version": "0.2.6",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
